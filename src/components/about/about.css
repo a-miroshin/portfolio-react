@@ -1,0 +1,50 @@
+section.about {
+  padding: 40px;
+  padding-right: 0px;
+  flex-basis: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  transition: 150ms ease-in-out;
+}
+
+section.about > article {
+  padding-bottom: 20px;
+}
+
+section.about > article > p {
+  padding-bottom: 1rem;
+}
+
+section.about h1 {
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  section.about {
+    flex-basis: auto;
+    padding: 20px;
+    padding-bottom: 60px;
+    /* padding-left: initial; */
+  }
+  section.about > article {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+  }
+  section.about > article > p {
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  section.about > article {
+    display: block;
+  }
+  section.about > article > p {
+    padding-bottom: 1rem;
+    width: initial;
+  }
+}

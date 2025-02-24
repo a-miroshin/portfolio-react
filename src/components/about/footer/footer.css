@@ -1,0 +1,26 @@
+/* footer */
+
+ul.socials {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 12px;
+}
+
+ul.socials li {
+  display: inline-flex;
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+  filter: var(--filter-secondary-color);
+  transition: filter 150ms ease-in-out;
+}
+
+ul.socials li:hover {
+  filter: var(--filter-color);
+}
+
+.footer a:visited {
+  text-decoration: none;
+}
