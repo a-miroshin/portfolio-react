@@ -20,7 +20,8 @@
   --main-color: #101010;
   --secondary-color: #ffffff;
   --background-color: #ffffff;
-  --accent-color: #101010;
+  /* --accent-color: #101010; */
+  --accent-color: #0000ff;
   --button-bg-color: #ffffff;
   --button-bg-hover-color: #101010;
   --filter-color: var(--filter-black);
@@ -32,12 +33,17 @@
   --main-color: #e6e6e6;
   --secondary-color: #212121;
   --background-color: #212121;
-  --accent-color: #e6e6e6;
+  --accent-color: var(--lightgray);
   --button-bg-color: #212121;
   --button-bg-hover-color: #e6e6e6;
   --filter-color: var(--filter-white);
   --filter-secondary-color: var(--filter-lightgray);
   --filter-background-color: var(--filter-black);
+}
+
+::selection {
+  background-color: var(--accent-color); /* Цвет фона выделенного текста */
+  color: white; /* Цвет текста при выделении */
 }
 
 *,

@@ -47,9 +47,7 @@
   height: 40px;
   background-color: var(--main-color);
   transition: 150ms ease-in-out;
-}
 
-.dark-mode-switch > input + label::after {
   mask-image: url(./icons/sun.svg);
   mask-repeat: no-repeat;
   mask-position: center;

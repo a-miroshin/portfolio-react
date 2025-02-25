@@ -9,20 +9,54 @@ ul.socials {
 }
 
 ul.socials li {
-  display: inline-flex;
-  text-decoration: none;
+  display: block;
   height: 24px;
   width: 24px;
-  filter: var(--filter-secondary-color);
-  transition: filter 150ms ease-in-out;
 }
 
-ul.socials li:hover {
-  filter: var(--filter-color);
+ul.socials li > a {
+  position: relative; /* Добавлено для псевдоэлемента */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.footer a:visited {
-  text-decoration: none;
+ul.socials li > a::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: var(--accent-color);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+ul.socials li > a:focus:hover,
+ul.socials li > a:hover {
+  border-color: var(--main-color);
+  outline-color: var(--main-color);
+}
+
+ul.socials li > a:hover::after {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  outline-color: var(--main-color);
+}
+
+ul.socials li > a:focus {
+  border-color: var(--accent-color);
+  outline-color: var(--accent-color);
+}
+
+ul.socials li > a[title="Instagram"]::after {
+  mask-image: url(./icons/instagram.svg);
+}
+
+ul.socials li > a[title="Telegram"]::after {
+  mask-image: url(./icons/telegram.svg);
+}
+
+ul.socials li > a[title="LinkedIn"]::after {
+  mask-image: url(./icons/linkedin.svg);
 }
 
 @media (max-width: 1200px) {
