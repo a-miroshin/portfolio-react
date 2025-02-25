@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import project05Image from "../../../assets/images/previews/project-05-min.jpg";
 
 const Project05 = {

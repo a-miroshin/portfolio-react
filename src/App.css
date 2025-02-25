@@ -16,7 +16,7 @@
     saturate(7500%) hue-rotate(1deg) brightness(109%) contrast(107%); /* #ffffff */
 }
 
-:root[data-theme="light"] {
+[data-theme="light"] {
   --main-color: #101010;
   --secondary-color: #ffffff;
   --background-color: #ffffff;
@@ -28,7 +28,7 @@
   --filter-background-color: var(--filter-white);
 }
 
-:root[data-theme="dark"] {
+[data-theme="dark"] {
   --main-color: #e6e6e6;
   --secondary-color: #212121;
   --background-color: #212121;
@@ -48,7 +48,7 @@
   box-sizing: border-box;
 }
 
-main {
+.App {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -66,7 +66,7 @@ h1 {
 
 /* for narrowed window */
 @media (max-width: 1200px) {
-  main {
+  .App {
     flex-direction: column-reverse;
     height: auto;
     gap: 0px;

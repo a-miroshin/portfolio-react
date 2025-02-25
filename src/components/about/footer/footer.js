@@ -3,11 +3,14 @@ import React from "react";
 import telegramIcon from "./icons/telegram.svg";
 import instagramIcon from "./icons/instagram.svg";
 import linkedinIcon from "./icons/linkedin.svg";
+
+import ButtonDownloadContainer from "./download/container.js";
 import "./footer.css";
 
 const Footer = () => {
   return (
     <div className="footer">
+      <ButtonDownloadContainer />
       <ul className="socials">
         <li>
           <a href="https://t.me/a_miroshin">

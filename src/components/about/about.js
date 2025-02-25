@@ -1,5 +1,7 @@
 import React from "react";
+
 import Footer from "./footer/footer";
+
 import "./about.css";
 
 const About = () => {

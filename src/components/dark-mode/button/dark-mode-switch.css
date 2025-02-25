@@ -1,0 +1,74 @@
+.dark-mode-switch {
+  position: fixed;
+  z-index: 1000; /* Убедитесь, что кнопка выше других элементов */
+  margin: 0;
+  padding: 0;
+  top: 40px;
+  left: 40px;
+}
+
+@media (max-width: 1200px) {
+  .dark-mode-switch {
+    top: 30px;
+    left: 30px;
+  }
+}
+
+.dark-mode-switch > input {
+  /* display: none; */
+  visibility: hidden;
+  position: absolute;
+}
+
+.dark-mode-switch > input + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dark-mode-switch > input + label::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 25%;
+  background-color: var(--button-bg-color);
+  transition: 300ms ease-in-out;
+}
+
+.dark-mode-switch:hover > input + label::before {
+  background-color: var(--button-bg-hover-color);
+}
+
+.dark-mode-switch > input + label::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  transition: 150ms ease-in-out;
+}
+
+.dark-mode-switch > input + label::after {
+  mask-image: url(./icons/sun.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background: var(--main-color);
+}
+
+.dark-mode-switch > input:checked + label::after {
+  mask-image: url(./icons/moon.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background: var(--main-color);
+}
+
+/* on hover */
+
+.dark-mode-switch:hover > input + label::after {
+  background-color: var(--button-bg-color);
+}
+
+.dark-mode-switch:hover > input:checked + label::after {
+  background-color: var(--button-bg-color);
+}

@@ -1,0 +1,86 @@
+.buttons-download-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+
+  /* uncomment this for debugging purpose */
+  /* background-color: aquamarine; */
+}
+
+.buttons-download-container > a > button {
+  /* padding: 10px 20px; */
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 40px;
+
+  background-color: var(--button-bg-color);
+  color: var(--main-color);
+  transition: background-color 0.3s, color 0.3s;
+
+  /* text-wrap-mode: nowrap; */
+  /* text-wrap-mode: nowrap; */
+}
+
+.buttons-download-container > a > button:hover {
+  background-color: var(--button-bg-hover-color);
+  color: var(--secondary-color);
+
+  cursor: pointer;
+}
+
+/* .buttons-download-container > a:hover > button {
+  cursor: pointer;
+} */
+
+.buttons-download-container > a {
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .buttons-download-container {
+    margin: 0px;
+  }
+}
+
+.buttons-download-container > a > button:focus {
+  /* background-color: blue; */
+}
+
+@media (max-width: 640px) {
+  .buttons-download-container {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    /* gap: unset; */
+    width: 100%;
+  }
+
+  .buttons-download-container > a {
+    display: flex;
+    width: 100%;
+  }
+
+  .buttons-download-container > a > button {
+    padding: auto;
+    width: 100%;
+    text-decoration: none;
+
+    /* flex-basis: 50%; */
+  }
+}
+
+@media (max-width: 450px) {
+  .buttons-download-container {
+    flex-direction: column;
+  }
+}

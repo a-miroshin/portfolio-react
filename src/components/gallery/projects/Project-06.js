@@ -1,5 +1,5 @@
-import React from "react";
-import project06Image from "../../../assets/images/previews/project-05-min.jpg";
+// import React from "react";
+// import project06Image from "../../../assets/images/previews/project-05-min.jpg";
 
 const Project06 = {
   title: "Project 06",
