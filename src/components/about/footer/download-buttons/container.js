@@ -4,7 +4,7 @@ import ButtonDownload from "./button";
 import cvUrl from "../../../../assets/downloads/Alexander_Miroshin_CV.pdf";
 import PortfolioUrl from "../../../../assets/downloads/Alexander_Miroshin_Portfolio.pdf";
 
-import "./download.css";
+import "./download-buttons.css";
 
 const ButtonsDownloadContainer = () => {
   return (

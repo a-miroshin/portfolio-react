@@ -32,19 +32,21 @@ ul.socials li > a::after {
 
 ul.socials li > a:focus:hover,
 ul.socials li > a:hover {
-  border-color: var(--main-color);
-  outline-color: var(--main-color);
+  border-color: var(--focal-color);
+  outline-color: var(--focal-color);
 }
 
 ul.socials li > a:hover::after {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
-  outline-color: var(--main-color);
+  background-color: var(--focal-color);
+  border-color: var(--focal-color);
+  outline-color: var(--focal-color);
 }
 
 ul.socials li > a:focus {
-  border-color: var(--accent-color);
-  outline-color: var(--accent-color);
+  border-radius: 25%;
+  border: 1px solod var(--accent-color);
+  outline: 2px solid var(--accent-color);
+  /* outline-offset: 1px; */
 }
 
 ul.socials li > a[title="Instagram"]::after {

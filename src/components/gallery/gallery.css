@@ -48,8 +48,6 @@ a.card {
 
 .card .year {
   font-size: 0.8rem;
-  /* color: darkgrey; */
-  /* filter: var(--filter-lightgray); */
 }
 
 @media (max-width: 1600px) {

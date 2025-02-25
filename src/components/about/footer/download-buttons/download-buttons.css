@@ -19,21 +19,28 @@
   padding-left: 16px;
   padding-right: 16px;
   height: 40px;
-  background-color: var(--button-bg-color);
+  background-color: var(--secondary-color);
   color: var(--accent-color);
 }
 
+.buttons-download-container > a:focus:hover {
+  color: var(--secondary-color);
+  background-color: var(--focal-color);
+}
+
 .buttons-download-container > a:hover {
-  outline: none;
-  font-weight: 400;
-  color: var(--background-color);
-  background-color: var(--accent-color);
+  /* outline: none; */
+  /* font-weight: 400; */
+  background-color: var(--secondary-color);
+  color: var(--focal-color);
+  outline: var(--focal-color);
+  border-color: var(--focal-color);
 }
 
 .buttons-download-container > a:focus {
   outline: none;
   font-weight: 400;
-  color: var(--background-color);
+  color: var(--secondary-color);
   background-color: var(--accent-color);
 }
 

@@ -10,40 +10,26 @@
   --black: #101010;
   --white: #ffffff;
   --lightgray: #c6c6c6;
-  --filter-lightgray: invert(83%) sepia(1%) saturate(64%) hue-rotate(315deg)
-    brightness(95%) contrast(94%); /* #c6c6c6 */
-  --filter-white: brightness(0) saturate(100%) invert(100%) sepia(0%)
-    saturate(7500%) hue-rotate(1deg) brightness(109%) contrast(107%); /* #ffffff */
+  --blue: #0000ff;
 }
 
 [data-theme="light"] {
   --main-color: #101010;
   --secondary-color: #ffffff;
-  --background-color: #ffffff;
-  /* --accent-color: #101010; */
-  --accent-color: #0000ff;
-  --button-bg-color: #ffffff;
-  --button-bg-hover-color: #101010;
-  --filter-color: var(--filter-black);
-  --filter-secondary-color: var(--filter-lightgray);
-  --filter-background-color: var(--filter-white);
+  --accent-color: var(--blue);
+  --focal-color: var(--black);
 }
 
 [data-theme="dark"] {
   --main-color: #e6e6e6;
   --secondary-color: #212121;
-  --background-color: #212121;
-  --accent-color: var(--lightgray);
-  --button-bg-color: #212121;
-  --button-bg-hover-color: #e6e6e6;
-  --filter-color: var(--filter-white);
-  --filter-secondary-color: var(--filter-lightgray);
-  --filter-background-color: var(--filter-black);
+  --accent-color: #e6e6e6;
+  --focal-color: var(--white);
 }
 
 ::selection {
   background-color: var(--accent-color); /* Цвет фона выделенного текста */
-  color: white; /* Цвет текста при выделении */
+  color: var(--secondary-color); /* Цвет текста при выделении */
 }
 
 *,
@@ -60,7 +46,7 @@
   height: 100vh;
   gap: 40px;
   color: var(--main-color);
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
 
   transition: 150ms ease-in-out;
 }

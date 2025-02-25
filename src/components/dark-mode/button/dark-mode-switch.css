@@ -32,12 +32,17 @@
   width: 40px;
   height: 40px;
   border-radius: 25%;
-  background-color: var(--button-bg-color);
+  background-color: var(--secondary-color);
   transition: 300ms ease-in-out;
 }
 
+.dark-mode-switch:hover > input + label::after,
+.dark-mode-switch:hover > input:checked + label::after {
+  background-color: var(--secondary-color);
+}
+
 .dark-mode-switch:hover > input + label::before {
-  background-color: var(--button-bg-hover-color);
+  background-color: var(--main-color);
 }
 
 .dark-mode-switch > input + label::after {
@@ -45,7 +50,6 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: var(--main-color);
   transition: 150ms ease-in-out;
 
   mask-image: url(./icons/sun.svg);
@@ -59,14 +63,4 @@
   mask-repeat: no-repeat;
   mask-position: center;
   background: var(--main-color);
-}
-
-/* on hover */
-
-.dark-mode-switch:hover > input + label::after {
-  background-color: var(--button-bg-color);
-}
-
-.dark-mode-switch:hover > input:checked + label::after {
-  background-color: var(--button-bg-color);
 }
