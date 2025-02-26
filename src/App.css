@@ -7,24 +7,24 @@
 :root {
   font-family: "Inter", sans-serif;
 
-  --black: #101010;
-  --white: #ffffff;
-  --lightgray: #c6c6c6;
-  --blue: #0000ff;
+  --true-black: #000000;
+  --black: #1a1a1a;
+  --true-white: #ffffff;
+  --white: #dadada;
 }
 
 [data-theme="light"] {
-  --main-color: #101010;
-  --secondary-color: #ffffff;
-  --accent-color: var(--blue);
-  --focal-color: var(--black);
+  --main-color: var(--black);
+  --secondary-color: var(--true-white);
+  --accent-color: var(--black);
+  --focal-color: var(--true-black);
 }
 
 [data-theme="dark"] {
-  --main-color: #e6e6e6;
-  --secondary-color: #212121;
-  --accent-color: #e6e6e6;
-  --focal-color: var(--white);
+  --main-color: var(--white);
+  --secondary-color: var(--black);
+  --accent-color: var(--white);
+  --focal-color: var(--true-white);
 }
 
 ::selection {
@@ -38,6 +38,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  transition: 300ms ease-in-out;
 }
 
 .App {
@@ -47,8 +49,6 @@
   gap: 40px;
   color: var(--main-color);
   background-color: var(--secondary-color);
-
-  transition: 150ms ease-in-out;
 }
 
 h1 {

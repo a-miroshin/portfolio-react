@@ -7,7 +7,7 @@ section.about {
   flex-direction: column;
   justify-content: flex-end;
 
-  transition: 150ms ease-in-out;
+  /* transition: 150ms ease-in-out; */
 }
 
 section.about h1 {
@@ -25,26 +25,25 @@ section.about > article > p {
 /* my mailto link  */
 
 section.about > article a {
-  text-decoration: none;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--accent-color);
   color: var(--accent-color);
-}
 
-section.about > article a:visited {
-  color: var(--accent-color);
+  transition: unset;
 }
 
 section.about > article a:hover {
   color: var(--focal-color);
+  text-decoration-color: var(--focal-color);
 }
 
-/* underline for the link */
-
-section.about > article a:focus {
+section.about > article a:focus,
+section.about > article a:hover {
   outline: none;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 4px;
-  /* text-decoration-thickness: 2px; */
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--focal-color);
 }
 
 /* for narrowed screens */

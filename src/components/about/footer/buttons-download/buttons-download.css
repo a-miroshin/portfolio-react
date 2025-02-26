@@ -21,27 +21,19 @@
   height: 40px;
   background-color: var(--secondary-color);
   color: var(--accent-color);
+
+  transition: unset;
 }
 
-.buttons-download-container > a:focus:hover {
+.buttons-download-container > a:focus,
+.buttons-download-container > a:hover {
   color: var(--secondary-color);
   background-color: var(--focal-color);
-}
-
-.buttons-download-container > a:hover {
-  /* outline: none; */
-  /* font-weight: 400; */
-  background-color: var(--secondary-color);
-  color: var(--focal-color);
-  outline: var(--focal-color);
   border-color: var(--focal-color);
 }
 
 .buttons-download-container > a:focus {
   outline: none;
-  font-weight: 400;
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
 }
 
 .buttons-download-container > a:visited {

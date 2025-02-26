@@ -36,6 +36,13 @@
   transition: 300ms ease-in-out;
 }
 
+@media (hover: none), (pointer: coarse) {
+  .dark-mode-switch:hover > input + label::after {
+    background-color: red;
+    /* color: green; */
+  }
+}
+
 .dark-mode-switch:hover > input + label::after,
 .dark-mode-switch:hover > input:checked + label::after {
   background-color: var(--secondary-color);
