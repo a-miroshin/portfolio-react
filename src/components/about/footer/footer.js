@@ -4,7 +4,7 @@ import React from "react";
 // import instagramIcon from "./icons/instagram.svg";
 // import linkedinIcon from "./icons/linkedin.svg";
 
-import ButtonDownloadContainer from "./download-buttons/container.js";
+import ButtonDownloadContainer from "./buttons-download/container.js";
 import "./footer.css";
 
 const Footer = () => {

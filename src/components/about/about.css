@@ -10,6 +10,10 @@ section.about {
   transition: 150ms ease-in-out;
 }
 
+section.about h1 {
+  font-size: 1rem;
+}
+
 section.about > article {
   padding-bottom: 20px;
 }
@@ -18,8 +22,17 @@ section.about > article > p {
   padding-bottom: 1rem;
 }
 
-section.about h1 {
-  font-size: 1rem;
+section.about > article a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+section.about > article a:visited {
+  color: var(--accent-color);
+}
+
+section.about > article a:hover {
+  color: var(--focal-color);
 }
 
 @media (max-width: 1200px) {
@@ -30,21 +43,17 @@ section.about h1 {
     /* padding-left: initial; */
   }
   section.about > article {
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
-  }
-  section.about > article > p {
-    width: 50%;
+    columns: 2;
+    column-gap: 10px;
   }
 }
 
 @media (max-width: 640px) {
   section.about > article {
-    display: block;
+    columns: 1;
+    column-gap: unset;
   }
   section.about > article > p {
     padding-bottom: 1rem;
-    width: initial;
   }
 }

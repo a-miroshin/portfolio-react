@@ -5,6 +5,7 @@ import Footer from "./footer/footer";
 import "./about.css";
 
 const About = () => {
+  const Mail = "miroshin.architect@gmail.com";
   return (
     <section className="about">
       <h1>About me</h1>
@@ -16,6 +17,9 @@ const About = () => {
         <p>
           My location is Nizhniy Novgorod, Russia, and I'm ready to work all
           over the world.
+        </p>
+        <p>
+          You can mail me at <a href={`mailto:${Mail}`}>{Mail}</a> or...
         </p>
       </article>
       <Footer />

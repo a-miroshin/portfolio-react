@@ -13,13 +13,13 @@ const Gallery = () => {
           key={project.link}
           title={project.title}
           className="card"
-          href={project.link}
+          href={project.link || "#"} // Ensure this path is correct
         >
           <div className="image-container">
             <img src={project.image} alt={project.title} />
           </div>
-          <div className="title">{project.title}</div>
-          <div className="year">{new Date(project.date).getFullYear()}</div>
+          {/* <div className="title">{project.title}</div> */}
+          {/* <div className="year">{new Date(project.date).getFullYear()}</div> */}
         </a>
       ))}
     </section>

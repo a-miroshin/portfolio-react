@@ -19,8 +19,6 @@ function App() {
       />
       <About />
       <Gallery />
-      {/* <DarkModeSwitch /> */}
-      {/* Include the DarkModeSwitch component */}
     </div>
   );
 }
