@@ -22,6 +22,8 @@ section.about > article > p {
   padding-bottom: 1rem;
 }
 
+/* my mailto link  */
+
 section.about > article a {
   text-decoration: none;
   color: var(--accent-color);
@@ -35,18 +37,31 @@ section.about > article a:hover {
   color: var(--focal-color);
 }
 
+/* underline for the link */
+
+section.about > article a:focus {
+  outline: none;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 4px;
+  /* text-decoration-thickness: 2px; */
+}
+
+/* for narrowed screens */
+
 @media (max-width: 1200px) {
   section.about {
     flex-basis: auto;
     padding: 20px;
     padding-bottom: 60px;
-    /* padding-left: initial; */
   }
   section.about > article {
     columns: 2;
     column-gap: 10px;
   }
 }
+
+/* for mobile screens */
 
 @media (max-width: 640px) {
   section.about > article {
