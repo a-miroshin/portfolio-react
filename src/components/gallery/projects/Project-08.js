@@ -1,6 +1,7 @@
 import project08Image from "../../../assets/images/previews/project-08-min.jpg";
 
 const Project08 = {
+  id: 8,
   title: "Project 08",
   date: "2023-01-08",
   link: "#",

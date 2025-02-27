@@ -10,7 +10,7 @@ const Gallery = () => {
     <section className="gallery">
       {projects.map((project) => (
         <a
-          key={project.link}
+          key={project.id} // Ensure each key is unique. Its important for React to keep track of each element
           title={project.title}
           className="card"
           href={project.link || "#"} // Ensure this path is correct
