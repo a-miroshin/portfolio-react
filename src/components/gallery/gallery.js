@@ -1,5 +1,5 @@
 import React from "react";
-import projects from "./projects-index.js"; // Ensure this path is correct
+import projects from "./projects.js"; // Ensure this path is correct
 import "./gallery.css";
 
 // Sort projects by date (newest first)

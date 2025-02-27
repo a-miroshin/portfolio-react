@@ -7,6 +7,9 @@ import PortfolioUrl from "../../../../assets/downloads/Alexander_Miroshin_Portfo
 import "./buttons-download.css";
 
 const ButtonsDownloadContainer = () => {
+  console.log("CV URL:", cvUrl);
+  console.log("Portfolio URL:", PortfolioUrl);
+
   return (
     <div className="buttons-download-container">
       <ButtonDownload url={cvUrl} title="Download CV" />
